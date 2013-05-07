@@ -1,43 +1,279 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Miniport 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <title>Responsive Navigation Demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<script src="jquery.min.js"></script>
-	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
+	<head>
+		<title>CurriWeb</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body>
 
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
+		<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#top">Top</a></li>
+					<li><a href="#work">Especialista</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contactos</a></li>
+				</ul>
+			</nav>
 
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-	</script>
-</head>
-<body>
-	<nav class="clearfix">
-		<ul class="clearfix">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">How-to</a></li>
-			<li><a href="#">Icons</a></li>
-			<li><a href="#">Design</a></li>
-			<li><a href="#">Web 2.0</a></li>
-			<li><a href="#">Tools</a></li>	
-		</ul>
-		<a href="#" id="pull">Menu</a>
-	</nav>
-</body>
+		<!-- Home -->
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="me image image-full"><img src="images/me.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>Hola. soy <strong>Ramón Núñez del Arco</strong>.</h1>
+							</header>
+							<p>Y este es un pequeño <strong>portafolio</strong>, de lo que realizo, este es una muestra  </p>
+							<a href="#work" class="button button-big">Leer más sobre lo que hago</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Work -->
+			<div class="wrapper wrapper-style2">
+				<article id="work">
+					<header>
+						<h2>Diseño y construyo aplicaciones multimedia.</h2>
+						<span></span>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="icon featured-icon icon-comments-alt"></span>
+									<h3>Infografías digitales</h3>
+									<p> Se trata de un nuevo producto que conlleva una nueva rutina  profesional que permite tratar, en este caso, periodísticamente los acontecimientos, 
+acciones o cosas y generar comunicación mediante algún tipo de presentación o género 
+informativo alternativo y más visual que los tradicionales. </p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="icon featured-icon icon-file-alt"></span>
+									<h3>Páginas web</h3>
+									<p>Responsive web design" o "diseño web de respuesta" es un término relacionado con el concepto de desarrollo de sitios web de una manera, que permite que la estructura sea cambiada de acuerdo a la resolución de la pantalla del dispositivo desde el que se esté visualizando. </p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="icon featured-icon icon-thumbs-up"></span>
+									<h3>Juegos interactivos</h3>
+									<p> Con actividades interactivas, educativos para aprendizaje interativo, o a fines de marketing para entretener o aprender sobre un tema específico, presentandolo online o en CD ROOM</p>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#portfolio" class="button button-big">Mira más de mis recientes trabajos</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			<div class="wrapper wrapper-style3">
+				<article id="portfolio">
+					<header>
+						<h2>Portafolio </h2>
+						<span>Muestra de algunos trabajos hechos para medio de comunicación impreso online
+					, especiales multimedia, infografías y Juegos.</span></header>
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/especial-cronologico.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/11-10-12--chavez_71b66f33d23e291491e03e2f952f8885.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/especial-cronologico.html">Especial Multimedia</a></h3>
+									<p>Cronología de Hugo Chávez - Diario El Telégrafo</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/especial-deportivo.html" target="http://www.telegrafo.com.ec/multimedia/item/especial-deportivo.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/28-01-13-multimedia-ecuatoriano_b2106f393578be9e44c11e6a7b37b82c.jpg" alt="" /></a>
+									<h3><a href="http://flypixel.com/n33">Especial Multimedia</a></h3>
+									<p>Elecciones en Venezuela 2013</p>
+							  </article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/un-contenido-periodistico-de-trascendencia.html" target=" " class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/26-2-13-archivos_0da0d0e7355867dfde5c790a8756994d.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/un-contenido-periodistico-de-trascendencia.html">Especial Multimedia</a></h3>
+									<p>Nuevo aeropuerto en Tababela</p>
+							  </article>
+							</div>
+						</div>
+                        
+                        
+						<div class="row">
+                        
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/el-comic-en-ecuador.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/comis-club_983e0c994aae2383488c20c61196d47f.jpg" alt="" /></a>
+								  <h3><a href="http://www.telegrafo.com.ec/multimedia/item/el-comic-en-ecuador.html">Infografía digital</a><a href="http://www.telegrafo.com.ec/multimedia/item/el-comic-en-ecuador.html"></a></h3>
+									<p>El Cómic en Ecuador</p>
+							  </article>
+							</div>
+                            
+                            
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/crisis-en-el-estrecho-de-ormuz-2.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/iran_32d93851a70d3b8a196f5233f23708d8.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/crisis-en-el-estrecho-de-ormuz-2.html">Infografía digital</a><a href="http://www.telegrafo.com.ec/multimedia/item/crisis-en-el-estrecho-de-ormuz-2.html"></a></h3>
+									<p>Crisis en el estrecho de Ormuz</p>
+							  </article>
+							</div>
+                            
+                            
+							<div class="4u">
+								<article class="box box-style2">
+								  <a href="http://www.telegrafo.com.ec/multimedia/item/patrimonios-nacionales-en-guayaquil.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/patrimonios-guayaquil_b165709a4862a10673c1319089469204.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/patrimonios-nacionales-en-guayaquil.html">Infografía digital</a></h3>
+									<p>Patrimonios Nacionales en Guayaquil </p>
+								</article>
+							</div>
+						</div>
+                        
+                        
+                        <div class="row">
+                        
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/prueba.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/pintateunmuro_2f0bd82b33f313116f175228191fcada.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/prueba.html">Juego interactivo</a><a href="http://www.telegrafo.com.ec/multimedia/item/prueba.html"></a></h3>
+									<p>Píntate un Muro.</p>
+							  </article>
+							</div>
+                            
+                            
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/viste-a-la-seleccion.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/juego_954c8c687034a380b189b0cd3c954843.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/viste-a-la-seleccion.html">Juego interactivo</a><a href="http://www.telegrafo.com.ec/multimedia/item/viste-a-la-seleccion.html"></a></h3>
+									<p>Viste a la Selección</p>
+							  </article>
+							</div>
+                            
+                            
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.telegrafo.com.ec/multimedia/item/pong-aniversario-del-primer-videojuego.html" class="image image-full"><img src="http://www.telegrafo.com.ec/cache/com_zoo/images/1-7-12-pong-_16328088c46eb45c122b367c94c22103.jpg" alt="" /></a>
+									<h3><a href="http://www.telegrafo.com.ec/multimedia/item/pong-aniversario-del-primer-videojuego.html">Juego interactivo</a></h3>
+									<p>Aniversario del primer videojuego.</p>
+							  </article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button button-big">Ponte en contacto conmigo</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper wrapper-style4">
+				<article id="contact">
+					<header>
+						<h2>¿Quieres contactarme?</h2>
+						<span>Llena los datos a continuación:</span>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<form method="post" action="#">
+									<div>
+										<div class="row">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Nombre" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Producto" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Mensaje"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<a href="#" class="button form-button-submit">Enviar mensaje</a>
+												<a href="#" class="button button-alt form-button-reset">Borrar formulario</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row row-special">
+							<div class="12u">
+								<h3>Búscame en:</h3>
+								<ul class="social">
+									<li class="twitter"><a href="https://twitter.com/ramonjaker" class="icon icon-twitter"><span>Twitter</span></a></li>
+									<li class="facebook"><a href="https://www.facebook.com/ramon.nunezdelarco" class="icon icon-facebook"><span>Facebook</span></a></li>
+									
+									<li class="linkedin"><a href="http://ec.linkedin.com/pub/ram%C3%B3n-nu%C3%B1ez-del-arco/22/a8b/a5b" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+									 <li class="youtube"><a href="http://www.youtube.com/user/ramonjaker" class="icon icon-youtube"><span>YouTube</span></a></li>
+									<li class="googleplus"><a href="https://plus.google.com/104117001811481041697/posts" class="icon icon-google-plus"><span>Google+</span></a></li>
+									<li class="github"><a href="http://github.com/n33" class="icon icon-github"><span>Github</span></a></li>
+									<!--
+									<li class="rss"><a href="#" class="icon icon-rss"><span>RSS</span></a></li>
+                                    <li class="dribbble"><a href="http://dribbble.com/n33" class="icon icon-dribbble"><span>Dribbble</span></a></li>
+									<li class="instagram"><a href="#" class="icon icon-instagram"><span>Instagram</span></a></li>
+									<li class="foursquare"><a href="#" class="icon icon-foursquare"><span>Foursquare</span></a></li>
+									<li class="skype"><a href="#" class="icon icon-skype"><span>Skype</span></a></li>
+									<li class="soundcloud"><a href="#" class="icon icon-soundcloud"><span>Soundcloud</span></a></li>
+									<li class="youtube"><a href="#" class="icon icon-youtube"><span>YouTube</span></a></li>
+									<li class="blogger"><a href="#" class="icon icon-blogger"><span>Blogger</span></a></li>
+									<li class="flickr"><a href="#" class="icon icon-flickr"><span>Flickr</span></a></li>
+									<li class="vimeo"><a href="#" class="icon icon-vimeo"><span>Vimeo</span></a></li>
+                                    
+                                    <li class="tumblr"><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
+									-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p id="copyright">
+							Ramón Núñez del Arco | Ingeniero en Sistemas Multimedia
+						</p>
+				  </footer>
+				</article>
+			</div>
+
+
+	</body>
 </html>
