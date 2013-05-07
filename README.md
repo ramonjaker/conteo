@@ -1,4 +1,4 @@
-Curriculumapp
+CurriWeb
 ======
 
 Curriculum y portafolios
